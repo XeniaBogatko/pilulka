@@ -60,9 +60,9 @@ gradle clean test
 ```
 
 
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest)
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest)
 
-Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.
+Build needs to set options and customization options <code><strong>*Collect*</strong></code>.
 
 <p align="center">
   <img src="images/jenkins.png" alt="Jenkins" width="800">
@@ -70,6 +70,9 @@ gradle clean test
 
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
 значок *Allure Report*, кликнув по которому, откроется страница с сформированным html-отчетом.
+
+After build is completed, in the <code><strong>*Builds history*</strong></code> opposite the build number will appear
+the *Allure Report* icon, clicking on which will open the page with the generated html-report.
 
 <p align="center">
   <img src="images/allure-report.png" alt="allure-report" width="800">
@@ -118,4 +121,3 @@ gradle clean test
 <p align="center">
   <img title="Selenoid Video" src="images/gif/test.gif">
 </p>
-	Содержание
