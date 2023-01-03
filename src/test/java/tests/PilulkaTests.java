@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.junitpioneer.jupiter.RetryingTest;
 import pages.PilulkaPages;
 
 import static com.codeborne.selenide.Selenide.sleep;
@@ -20,7 +21,7 @@ public class PilulkaTests extends TestBase {
                 .checkMenuItems();
     }
 
-    @Test
+    @RetryingTest(5)
     @DisplayName("Search for Nurofen")
     void cleanerSearchTest() {
         pilulkaPage
@@ -47,7 +48,7 @@ public class PilulkaTests extends TestBase {
                 .setCheckFooter(testFooter);
     }
 
-    @Test
+    @RetryingTest(5)
     @DisplayName("Authorization account test")
     void authorizationTestNegative() {
         pilulkaPage

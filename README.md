@@ -5,12 +5,12 @@
 - [Technologies and tools](#technologist-technologies-and-tools)
 - [Implemented checks](#bookmark-tabs-implemented-checks)
 - [Running tests from the terminal](#computer-running-tests-from-the-terminal)
-- [Running tests in Jenkins](#running-tests-in-jenkins)
-- [Test results report in Allure Report](#test-results-report-in-allure-report)
-- [Integration with Allure TestOps](#integration-with-allure-testops)
-- [Integration with Jira](#integration-with-jira)
-- [Telegram notifications using a bot](#telegram-notifications-using-a-bot)
-- [Test running example in Selenoid](#test-running-example-in-selenoid)
+- [Running tests in Jenkins](#-running-tests-in-jenkins)
+- [Test results report in Allure Report](#-test-results-report-in-allure-report)
+- [Integration with Allure TestOps](#-integration-with-allure-testops)
+- [Integration with Jira](#-integration-with-jira)
+- [Telegram notifications using a bot](#-telegram-notifications-using-a-bot)
+- [Test running example in Selenoid](#-test-running-example-in-selenoid)
 
 
 ## :technologist: Technologies and tools
@@ -32,7 +32,7 @@
 </p>
 
 
-## :bookmark-tabs: Implemented checks:
+## :bookmark_tabs: Implemented checks:
 ### UI Tests
 
 - Menu display checking
@@ -60,16 +60,13 @@ gradle clean test
 ```
 
 
-## :running: <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
 Build needs to set options and customization options <code><strong>*Collect*</strong></code>.
 
 <p align="center">
   <img src="images/jenkins.png" alt="Jenkins" width="800">
 </p>
-
-После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок *Allure Report*, кликнув по которому, откроется страница с сформированным html-отчетом.
 
 After build is completed, in the <code><strong>*Builds history*</strong></code> opposite the build number will appear
 the *Allure Report* icon, clicking on which will open the page with the generated html-report.
@@ -79,12 +76,11 @@ the *Allure Report* icon, clicking on which will open the page with the generate
 </p>
 
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest/16/allure/)
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest/16/allure/)
 
 <p align="center">
   <img src="images/allure-report1.png" alt="allure-report1" width="900">
 </p>
-
 
 
 ## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/17925)
@@ -107,16 +103,16 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="images/jira.png" alt="jira" width="900">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
-После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Telegram notifications using a bot
+After the build is completed, a special bot created in <code>Telegram</code>, automatically processes and sends a test run report message.
 
 <p align="center">
 <img title="Telegram Notifications" src="images/telegram.png">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Test running example in Selenoid
 
-К каждому тесту в отчете прилагается видео.
+A video is attached to each test in the report.
 
 <p align="center">
   <img title="Selenoid Video" src="images/gif/test.gif">

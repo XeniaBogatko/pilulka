@@ -41,6 +41,7 @@ dependencies {
             "org.aeonbits.owner:owner:1.0.12",
             'org.assertj:assertj-core:3.23.1',
             'org.slf4j:slf4j-simple:2.0.5',
+            'org.junit-pioneer:junit-pioneer:1.9.1',
             "io.appium:java-client:$appiumVersion")
 
 }
