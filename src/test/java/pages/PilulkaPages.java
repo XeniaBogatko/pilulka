@@ -33,7 +33,7 @@ public class PilulkaPages {
             addItem = $("[data-event=\"ProductDetailMaster\"] #js-add-to-cart-first"),
             basket = $(".header-user__counter"),
             removeItem = $(".order-line-pc__delete"),
-            authUser = $(byText("Přihlásit se")),
+            authUser = $("[title=\"Přihlásit se\"]"),
             authButton = $$("[data-method=\"Regular\"]").last(),
             checkAuth = $(".js-validate-error-label"),
             checkFooter = $$(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links").get(2);
