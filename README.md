@@ -1,16 +1,16 @@
-##Test automation project for https://pilulka.cz
+## Test automation project for https://pilulka.cz
 
 ##	Content
 
-- [Technologies and tools](#technologist-technologies and tools)
+- [Technologies and tools](#technologist-technologies-and-tools)
 - [Implemented checks](#bookmark_tabs-implemented-checks)
-- [Запуск тестов из терминала](#computer-запуск-тестов-из-терминала)
-- [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
-- [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-Allure-report)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
-- [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
-- [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
+- [Running tests from the terminal](#computer-running-tests-from-the-terminal)
+- [Running tests in Jenkins](#running-tests-in-jenkins)
+- [Test results report in Allure Report](#test-results-report-in-allure-report)
+- [Integration with Allure TestOps](#integration-with-allure-testops)
+- [Integration with Jira](#integration-with-jira)
+- [Telegram notifications using a bot](#telegram-notifications-using-a-bot)
+- [Test running example in Selenoid](#test-running-example-in-selenoid)
 
 
 ## :technologist: Technologies and tools
@@ -32,24 +32,24 @@
 </p>
 
 
-## :bookmark_tabs: Реализованные проверки:
+## :bookmark_tabs: Implemented checks:
 ### UI Tests
 
-- Проверка отображаения блоков меню
-- Проверка наличия товара
-- Проверка добавления и удлаения товара из корзины
-- Проверка отображения меню футер
-- Авторизация на сайте
+- Menu display checking
+- Product availability checking
+- Checking the addition and deletion of goods from the basket
+- Checking the display of the footer menu
+- Authorization on the site with incorrect credentials 
 
-## :computer: Запуск тестов из терминала
+## :computer: Running tests from the terminal
 
-### Локальный запуск тестов
+### Local running tests
 
 ```bash
 gradle clean test
 ```
 
-### Удаленный запуск тестов
+### Remote running tests
 
 ```bash
 gradle clean test
