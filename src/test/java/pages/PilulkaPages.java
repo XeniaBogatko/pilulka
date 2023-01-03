@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -41,6 +42,8 @@ public class PilulkaPages {
     public PilulkaPages openPage() {
         step("Open 'https://www.pilulka.cz/'", () ->
                 open("https://www.pilulka.cz/"));
+        Selenide.refresh();
+
         if ($(".footer__cookie").isDisplayed()){
             $(byText("Odmítnout všechny cookies")).click();
         }

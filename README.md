@@ -3,7 +3,7 @@
 ##	Content
 
 - [Technologies and tools](#technologist-technologies-and-tools)
-- [Implemented checks](#bookmark_tabs-implemented-checks)
+- [Implemented checks](#bookmark-tabs-implemented-checks)
 - [Running tests from the terminal](#computer-running-tests-from-the-terminal)
 - [Running tests in Jenkins](#running-tests-in-jenkins)
 - [Test results report in Allure Report](#test-results-report-in-allure-report)
@@ -32,7 +32,7 @@
 </p>
 
 
-## :bookmark_tabs: Implemented checks:
+## :bookmark-tabs: Implemented checks:
 ### UI Tests
 
 - Menu display checking
@@ -60,7 +60,7 @@ gradle clean test
 ```
 
 
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest)
+## :running: <img width="4%" title="Jenkins" src="images/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
 Build needs to set options and customization options <code><strong>*Collect*</strong></code>.
 

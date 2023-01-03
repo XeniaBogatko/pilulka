@@ -18,7 +18,6 @@ public class PilulkaTests extends TestBase {
         pilulkaPage
                 .openPage()
                 .checkMenuItems();
-        sleep(3000);
     }
 
     @Test
@@ -28,7 +27,6 @@ public class PilulkaTests extends TestBase {
                 .openPage()
                 .search("nurofen")
                 .checkInSearchResults("Nurofen 200 mg 24 tablet");
-        sleep(3000);
     }
 
     @Test
@@ -37,7 +35,6 @@ public class PilulkaTests extends TestBase {
         pilulkaPage
                 .openPage()
                 .addItemInBasket();
-        sleep(3000);
     }
 
     @ValueSource(strings = {"Kontakt", "O nás", "Pro firmy", "Pro média", "Pro investory", "Obchodní podmínky",
@@ -48,7 +45,6 @@ public class PilulkaTests extends TestBase {
         pilulkaPage
                 .openPage()
                 .setCheckFooter(testFooter);
-        sleep(3000);
     }
 
     @Test
@@ -57,6 +53,5 @@ public class PilulkaTests extends TestBase {
         pilulkaPage
                 .openPage()
                 .loginWithError(Auth.config.login(), Auth.config.pass());
-        sleep(3000);
     }
 }
