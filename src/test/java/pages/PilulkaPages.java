@@ -94,6 +94,10 @@ public class PilulkaPages {
                 subMenu.click());
         step("Choose item in the list", () ->
                 chosenItem.click());
+        if ($(byText("Kdy bude zboží u vás?")).isDisplayed()) {
+            // i cant catch this dialog locally, it exists only on the remote server
+            //todo close the dialog
+        }
         step("Add item in the basket", () ->
                 addItem.click());
         step("Check basket", () ->

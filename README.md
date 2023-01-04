@@ -83,15 +83,15 @@ the *Allure Report* icon, clicking on which will open the page with the generate
 </p>
 
 
-## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/17925)
+## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18009)
 
-## Основной дашборд
+## Main dashboard
 
 <p align="center">
   <img src="images/dashboard.png" alt="dashboard" width="900">
 </p>
 
-## Тест-кейсы
+## Test cases
 
 <p align="center">
   <img src="images/testcase.png" alt="testcase" width="900">
@@ -115,5 +115,5 @@ After the build is completed, a special bot created in <code>Telegram</code>, au
 A video is attached to each test in the report.
 
 <p align="center">
-  <img title="Selenoid Video" src="images/video/test.mp4">
+  <img title="Selenoid Video" src="images/video/test.gif">
 </p>

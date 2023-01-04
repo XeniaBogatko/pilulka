@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/video/test.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/allure-report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/allure-report1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/video/test.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +77,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/Users/xenia/IdeaProjects/PilulkaProject/images/video",
+    "last_opened_file_path": "/Users/xenia/IdeaProjects/PilulkaProject/images",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -81,9 +86,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/images/video" />
       <recent name="$PROJECT_DIR$/notifications" />
-      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/images/logo" />
     </key>
   </component>
@@ -285,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672790619138</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="auth properties added">
+      <created>1672793438872</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672793438872</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +319,8 @@
     <MESSAGE value="refresh added" />
     <MESSAGE value="retry added" />
     <MESSAGE value="retry 5 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="retry 5 added" />
+    <MESSAGE value="auth properties added" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth properties added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
