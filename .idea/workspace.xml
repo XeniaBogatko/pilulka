@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/telegram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672797008094</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2 screenshots added">
+      <created>1672820216718</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672820216719</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,7 +326,8 @@
     <MESSAGE value="retry 5 added" />
     <MESSAGE value="auth properties added" />
     <MESSAGE value="screenshots added" />
-    <option name="LAST_COMMIT_MESSAGE" value="screenshots added" />
+    <MESSAGE value="2 screenshots added" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 screenshots added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

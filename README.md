@@ -76,7 +76,7 @@ the *Allure Report* icon, clicking on which will open the page with the generate
 </p>
 
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/hw_15_15_AutoTest/16/allure/)
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pilulka/10/allure/)
 
 <p align="center">
   <img src="images/allure-report1.png" alt="allure-report1" width="900">
