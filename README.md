@@ -83,7 +83,7 @@ the *Allure Report* icon, clicking on which will open the page with the generate
 </p>
 
 
-## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18009)
+## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18009)
 
 ## Main dashboard
 
@@ -97,7 +97,7 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="images/testcase.png" alt="testcase" width="900">
 </p>
 
-## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-482)
+## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-490)
 
 <p align="center">
   <img src="images/jira.png" alt="jira" width="900">
