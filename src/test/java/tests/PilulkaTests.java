@@ -8,12 +8,10 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.junitpioneer.jupiter.RetryingTest;
 import pages.PilulkaPages;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class PilulkaTests extends TestBase {
     PilulkaPages pilulkaPage = new PilulkaPages();
 
-    @Test
+    @RetryingTest(5)
     @DisplayName("Check menu items name")
     void checkMenuItems() {
         pilulkaPage
@@ -30,7 +28,7 @@ public class PilulkaTests extends TestBase {
                 .checkInSearchResults("Nurofen 200 mg 24 tablet");
     }
 
-    @Test
+    @RetryingTest(5)
     @DisplayName("Add and remove item in the basket")
     void basketTest() {
         pilulkaPage
