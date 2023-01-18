@@ -1,9 +1,7 @@
 package pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -48,7 +46,7 @@ public class PilulkaPages {
         step("Open 'https://www.pilulka.cz/'", () ->
                 open("https://www.pilulka.cz/"));
 
-        if ($(".footer__cookie").isDisplayed()){
+        if ($(".footer__cookie").isDisplayed()) {
             $(byText("Odmítnout všechny cookies")).click();
         }
         return this;

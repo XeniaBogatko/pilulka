@@ -113,9 +113,3 @@ A video is attached to each test in the report.
 <p align="center">
   <img title="Selenoid Video" src="images/video/test.gif">
 </p>
-
-## :mobile: Mobile Test running example for Wikipedia application
-
-<p align="center">
-  <img title="Mobile Video" src="media/video/mobile.gif">
-</p>

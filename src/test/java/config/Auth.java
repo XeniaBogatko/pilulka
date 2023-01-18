@@ -1,6 +1,7 @@
 package config;
 
 import org.aeonbits.owner.ConfigFactory;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class Auth {

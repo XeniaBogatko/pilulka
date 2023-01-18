@@ -1,4 +1,4 @@
-package tests.ui;
+package tests;
 
 import config.Auth;
 import org.junit.jupiter.api.DisplayName;
@@ -7,7 +7,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.junitpioneer.jupiter.RetryingTest;
 import pages.PilulkaPages;
-import tests.TestBase;
 
 public class PilulkaTests extends TestBase {
     PilulkaPages pilulkaPage = new PilulkaPages();
@@ -28,6 +27,7 @@ public class PilulkaTests extends TestBase {
                 .search("nurofen")
                 .checkInSearchResults("Nurofen 200 mg 24 tablet");
     }
+
     @Test
     @DisplayName("Check empty basket after opening the site")
     void emptyBasketTest() {

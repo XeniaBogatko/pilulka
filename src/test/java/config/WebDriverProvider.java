@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class WebDriverProvider {
     static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+
     public static void config() {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
