@@ -111,5 +111,5 @@ After the build is completed, a special bot created in <code>Telegram</code>, au
 A video is attached to each test in the report.
 
 <p align="center">
-  <img title="Selenoid Video" src="images/video/test.gif">
+  <img title="Selenoid Video" src="media/video/test.gif">
 </p>
