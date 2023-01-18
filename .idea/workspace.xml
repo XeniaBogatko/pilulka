@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="" />
+    <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/allure-report.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/allure-report.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/allure-report1.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/allure-report1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dashboard.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/dashboard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jenkins.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/jenkins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jira.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/jira.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Allure.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Allure.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Allure_TO.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Allure_TO.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/GitHub.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/GitHub.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Gradle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Gradle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Idea.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Idea.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Java.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Java.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Jenkins_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Jenkins_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Jira.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Jira.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Junit5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Junit5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Selenide.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Selenide.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Selenoid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Selenoid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/logo/Telegram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/telegram.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/telegram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/testcase.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/testcase.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/video/test.gif" beforeDir="false" afterPath="$PROJECT_DIR$/media/video/test.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/video/test.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PilulkaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ui/PilulkaTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +54,22 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="PilulkaProject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PilulkaProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PilulkaProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PilulkaProject" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -68,7 +111,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;/Users/xenia/IdeaProjects/PilulkaProject/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xenia/IdeaProjects/PilulkaProject/src/test/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -77,78 +120,56 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java/drivers" />
+      <recent name="$PROJECT_DIR$/src/test/java/config" />
+      <recent name="$PROJECT_DIR$/media/video" />
       <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/images/video" />
-      <recent name="$PROJECT_DIR$/notifications" />
-      <recent name="$PROJECT_DIR$/images/logo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests.mobile" />
+      <recent name="helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PilulkaTests.basketTest">
-    <configuration name="PilulkaTests.authorizationTestNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PilulkaProject [allureServe]">
+    <configuration name="PilulkaProject [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.PilulkaTests.authorizationTestNegative&quot;" />
+            <option value="allureReport" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PilulkaTests.authorizationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PilulkaProject [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.PilulkaTests.authorizationTests&quot;" />
+            <option value="allureServe" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PilulkaTests.bagTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.PilulkaTests.bagTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -176,7 +197,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PilulkaTests.countrySearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PilulkaTests.emptyBasketTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,7 +210,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.PilulkaTests.countrySearchTest&quot;" />
+            <option value="&quot;tests.ui.PilulkaTests.emptyBasketTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PilulkaTests.openSaleFromBasketTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ui.PilulkaTests.openSaleFromBasketTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PilulkaProject [allureServe]" />
+        <item itemvalue="Gradle.PilulkaProject [allureReport]" />
+        <item itemvalue="Gradle.PilulkaTests.openSaleFromBasketTest" />
+        <item itemvalue="Gradle.PilulkaTests.emptyBasketTest" />
         <item itemvalue="Gradle.PilulkaTests.basketTest" />
-        <item itemvalue="Gradle.PilulkaTests.authorizationTestNegative" />
-        <item itemvalue="Gradle.PilulkaTests.authorizationTests" />
-        <item itemvalue="Gradle.PilulkaTests.countrySearchTest" />
-        <item itemvalue="Gradle.PilulkaTests.bagTest" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672820216719</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="readme fix">
+      <created>1672820509551</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672820509551</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +378,8 @@
     <MESSAGE value="auth properties added" />
     <MESSAGE value="screenshots added" />
     <MESSAGE value="2 screenshots added" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 screenshots added" />
+    <MESSAGE value="readme fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

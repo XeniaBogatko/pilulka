@@ -1,4 +1,4 @@
-package tests;
+package tests.ui;
 
 import config.Auth;
 import org.junit.jupiter.api.DisplayName;
@@ -7,6 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.junitpioneer.jupiter.RetryingTest;
 import pages.PilulkaPages;
+import tests.TestBase;
 
 public class PilulkaTests extends TestBase {
     PilulkaPages pilulkaPage = new PilulkaPages();
@@ -21,16 +22,31 @@ public class PilulkaTests extends TestBase {
 
     @RetryingTest(5)
     @DisplayName("Search for Nurofen")
-    void cleanerSearchTest() {
+    void itemSearchTest() {
         pilulkaPage
                 .openPage()
                 .search("nurofen")
                 .checkInSearchResults("Nurofen 200 mg 24 tablet");
     }
+    @Test
+    @DisplayName("Check empty basket after opening the site")
+    void emptyBasketTest() {
+        pilulkaPage
+                .openPage()
+                .checkEmptyBasket();
+    }
+
+    @Test
+    @DisplayName("Open Sales from the basket")
+    void openSaleFromBasketTest() {
+        pilulkaPage
+                .openPage()
+                .openSales();
+    }
 
     @RetryingTest(5)
     @DisplayName("Add and remove item in the basket")
-    void basketTest() {
+    void addItemToBasketTest() {
         pilulkaPage
                 .openPage()
                 .addItemInBasket();

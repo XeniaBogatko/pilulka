@@ -3,6 +3,7 @@ package pages;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -33,6 +34,10 @@ public class PilulkaPages {
             chosenItem = $("#product-list div"),
             addItem = $("[data-event=\"ProductDetailMaster\"] #js-add-to-cart-first"),
             basket = $(".header-user__counter"),
+            basketId = $("#js-cart-open"),
+            saleLink = $("#js-mobile-banner-car-cart [href=\"/vyprodej\"]"),
+            basketSubMenu = $("#js-mobile-banner-car-cart"),
+            mainTitle = $("#main-title"),
             removeItem = $(".order-line-pc__delete"),
             authUser = $("[title=\"Přihlásit se\"]"),
             authButton = $$("[data-method=\"Regular\"]").last(),
@@ -85,6 +90,23 @@ public class PilulkaPages {
     public void checkInSearchResults(String headerText) {
         step("Checking in stock", () ->
                 searchResult.shouldHave(text(headerText)));
+    }
+
+    public void checkEmptyBasket() {
+        step("Hover basket", () ->
+                basketId.hover());
+        step("Check sub-menu item text", () -> {
+            basketSubMenu.shouldHave(text("Ve svém košíku zatím nic nemáte"));
+        });
+    }
+
+    public void openSales() {
+        step("Hover basket", () ->
+                basketId.hover());
+        step("Open Sales", () -> {
+            saleLink.click();
+            mainTitle.shouldHave(text("Výprodej"));
+        });
     }
 
     public void addItemInBasket() {
