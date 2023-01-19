@@ -117,6 +117,7 @@ public class PilulkaMainPage {
                 subMenu.click());
         step("Choose item in the list", () ->
                 chosenItem.click());
+        sleep(5000);
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
                 step("Close modal window", () ->
