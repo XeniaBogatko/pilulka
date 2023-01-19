@@ -133,6 +133,10 @@ public class PilulkaMainPage {
             addItem.click();
         });
 
+        if ($(".footer__cookie").isDisplayed()) {
+            $(byText("Odmítnout všechny cookies")).click();
+        }
+
         step("Go to the basket", () ->
                 basket.click());
         step("Check that the basket contains the item", () ->
