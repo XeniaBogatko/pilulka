@@ -1,6 +1,5 @@
 package pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -31,7 +30,7 @@ public class PilulkaMainPage {
             searchInput = $("#js-search-form-q"),
             searchResult = $("#product-list"),
             subMenu = $$(".main-nav__category-title.js_level-2").findBy(text("Proteinové potraviny")),
-            chosenItem = $(byText("Nutrend Excelent Protein Bar 9 x 85 g")),
+            chosenItem = $(byText(addedItem)),
             addItem = $$("#js-add-to-cart-first").get(2),
             basket = $(".btn.btn-primary.btn-sm.px-3.d-inline-block.fwb"),
             basketId = $("#js-cart-open"),
@@ -132,10 +131,6 @@ public class PilulkaMainPage {
         step("Add item in the basket", () -> {
             addItem.click();
         });
-
-        if ($(".footer__cookie").isDisplayed()) {
-            $(byText("Odmítnout všechny cookies")).click();
-        }
 
         step("Go to the basket", () ->
                 basket.click());

@@ -73,13 +73,13 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="media/allure-report.png" alt="allure-report" width="800">
 </p>
 
-## <img width="4%" title="Allure Report" src="media/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pilulka/10/allure/)
+## <img width="4%" title="Allure Report" src="media/logo/Allure.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/pilulka/30/allure/)
 
 <p align="center">
   <img src="media/allure-report1.png" alt="allure-report1" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18009)
+## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Integration with [Allure TestOps](https://allure.autotests.cloud/launch/18709)
 
 ## Main dashboard
 
@@ -87,10 +87,10 @@ the *Allure Report* icon, clicking on which will open the page with the generate
   <img src="media/dashboard.png" alt="dashboard" width="900">
 </p>
 
-## Test cases
+## Test results
 
 <p align="center">
-  <img src="media/testcase.png" alt="testcase" width="900">
+  <img src="media/testsresults.png" alt="testresults" width="900">
 </p>
 
 ## <img width="4%" title="Jira" src="media/logo/Jira.svg"> Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-490)
