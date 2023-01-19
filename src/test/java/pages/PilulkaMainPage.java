@@ -121,8 +121,8 @@ public class PilulkaMainPage {
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
                 step("Close modal window", () ->
-                        //modalWindowCloseButton.click());
-                        $("").pressEscape());
+                        modalWindowCloseButton.click());
+                        //$("").pressEscape());
             }
         });
         step("Add item in the basket", () ->
