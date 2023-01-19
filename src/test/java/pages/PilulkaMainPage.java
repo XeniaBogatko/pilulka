@@ -40,6 +40,7 @@ public class PilulkaMainPage {
             authUser = $("[title=\"Přihlásit se\"]"),
             authButton = $$("[data-method=\"Regular\"]").last(),
             checkAuth = $(".js-validate-error-label"),
+            modalWindowClose = $("[aria-label=\"Zavřít modální okno\"]"),
             checkFooter = $$(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links").get(2);
 
     public PilulkaMainPage openPage() {
@@ -116,6 +117,7 @@ public class PilulkaMainPage {
                 chosenItem.click());
         if ($(byText("Kdy bude zboží u vás?")).isDisplayed()) {
             // i cant catch this dialog locally, it exists only on the remote server
+            modalWindowClose.click();
         }
         step("Add item in the basket", () ->
                 addItem.click());
