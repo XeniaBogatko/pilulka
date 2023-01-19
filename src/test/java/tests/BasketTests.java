@@ -33,7 +33,8 @@ public class BasketTests extends TestBase {
                 .openSales();
     }
 
-    @RetryingTest(5)
+   // @RetryingTest(5)
+    @Test
     @Epic("Basket")
     @Story("Adding item to the basket")
     @Owner("Xenia Bogatko")

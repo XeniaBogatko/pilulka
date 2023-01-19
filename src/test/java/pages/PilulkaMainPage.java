@@ -123,7 +123,7 @@ public class PilulkaMainPage {
             if (modalWindow.isDisplayed()) {
                 step("Close modal window", () ->
                         modalWindowCloseButton.click());
-                        actions().moveToElement(logo);
+                        actions().moveByOffset(-100, -100);//moveToElement(logo);
             }
         });
 
