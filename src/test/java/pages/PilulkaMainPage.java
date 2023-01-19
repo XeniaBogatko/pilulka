@@ -33,7 +33,7 @@ public class PilulkaMainPage {
             subMenu = $$(".main-nav__category-title.js_level-2").findBy(text("Proteinové potraviny")),
             chosenItem = $(byText("Nutrend Excelent Protein Bar 9 x 85 g")),
             addItem = $$("#js-add-to-cart-first").get(2),
-            basket = $(".col-12.col-md-6.text-md-right.order-1.order-md-2 a"),
+            basket = $$(".add-cart__add.add-cart__add--detail.add-cart__add--variant").get(2),
             basketId = $("#js-cart-open"),
             saleLink = $("#js-mobile-banner-car-cart [href=\"/vyprodej\"]"),
             basketSubMenu = $("#js-mobile-banner-car-cart"),
