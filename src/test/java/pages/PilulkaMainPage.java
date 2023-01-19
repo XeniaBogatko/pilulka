@@ -14,7 +14,7 @@ public class PilulkaMainPage {
     private final SelenideElement emailInput = $("#email");
     private final SelenideElement passInput = $("#password");
     private SelenideElement
-
+            logo = $(".logo__header"),
             medicineButton = $("[data-root-item=\"item-1032\"]"),
             additivesButton = $("[data-root-item=\"item-1089\"]"),
             motherButton = $("[data-root-item=\"item-1167\"]"),
@@ -117,14 +117,16 @@ public class PilulkaMainPage {
                 subMenu.click());
         step("Choose item in the list", () ->
                 chosenItem.click());
+
         sleep(5000);
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
                 step("Close modal window", () ->
                         modalWindowCloseButton.click());
-                        //$("").pressEscape());
+                        actions().moveToElement(logo);
             }
         });
+
         step("Add item in the basket", () ->
                 addItem.click());
         step("Check basket", () ->
