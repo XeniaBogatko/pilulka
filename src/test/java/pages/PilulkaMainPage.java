@@ -124,13 +124,15 @@ public class PilulkaMainPage {
                 step("Close modal window", () -> {
                     modalWindowCloseButton.click();
                     actions().moveToElement(logo);
+                    sleep(3000);
                 });
-
             }
         });
 
-        step("Add item in the basket", () ->
-                addItem.click());
+        step("Add item in the basket", () -> {
+            addItem.click();
+        });
+
         step("Check basket", () ->
                 basket.click());
         step("Remove item", () ->
