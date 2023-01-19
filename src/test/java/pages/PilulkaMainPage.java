@@ -13,6 +13,7 @@ public class PilulkaMainPage {
 
     private final SelenideElement emailInput = $("#email");
     private final SelenideElement passInput = $("#password");
+    private final String addedItem = "Nutrend Excelent Protein Bar 9 x 85 g";
     private SelenideElement
             logo = $(".logo__header"),
             medicineButton = $("[data-root-item=\"item-1032\"]"),
@@ -37,7 +38,7 @@ public class PilulkaMainPage {
             saleLink = $("#js-mobile-banner-car-cart [href=\"/vyprodej\"]"),
             basketSubMenu = $("#js-mobile-banner-car-cart"),
             mainTitle = $("#main-title"),
-            removeItem = $(".order-line-pc__delete"),
+            controlItem = $(".ml-2.mr-2.ml-md-0.mr-md-0"),
             authUser = $("[title=\"Přihlásit se\"]"),
             authButton = $$("[data-method=\"Regular\"]").last(),
             checkAuth = $(".js-validate-error-label"),
@@ -132,10 +133,10 @@ public class PilulkaMainPage {
             addItem.click();
         });
 
-        step("Check basket", () ->
+        step("Go to the basket", () ->
                 basket.click());
-        step("Remove item", () ->
-                removeItem.click());
+        step("Check that the basket contains the item", () ->
+                controlItem.shouldHave(text(addedItem)));
     }
 
     @Step("Login with {username}/{password}")

@@ -39,7 +39,7 @@ public class BasketTests extends TestBase {
     @Story("Adding item to the basket")
     @Owner("Xenia Bogatko")
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Add and remove item in the basket")
+    @DisplayName("Add item into the basket")
     void addItemToBasketTest() {
         pilulkaPage
                 .openPage()
