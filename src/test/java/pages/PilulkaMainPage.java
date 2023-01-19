@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -118,9 +119,9 @@ public class PilulkaMainPage {
                 chosenItem.click());
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
-                //cant catch this dialog locally, it exists only on the remote server
                 step("Close modal window", () ->
-                        modalWindowCloseButton.click());
+                        //modalWindowCloseButton.click());
+                        $("").pressEscape());
             }
         });
         step("Add item in the basket", () ->
