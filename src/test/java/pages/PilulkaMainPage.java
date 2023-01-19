@@ -121,9 +121,11 @@ public class PilulkaMainPage {
         sleep(5000);
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
-                step("Close modal window", () ->
-                        modalWindowCloseButton.click());
-                        actions().moveByOffset(-100, -100);//moveToElement(logo);
+                step("Close modal window", () -> {
+                    modalWindowCloseButton.click();
+                    actions().moveToElement(logo);
+                });
+
             }
         });
 
