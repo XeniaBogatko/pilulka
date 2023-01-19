@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3adcfff-aa3c-4ce4-8c3f-5b813226f983" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Attach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ui/PilulkaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PilulkaTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BasketTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/MenuTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PilulkaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PilulkaMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PilulkaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AuthorizationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674050790605</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring">
+      <created>1674051319190</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674051319190</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactoring 2">
+      <created>1674051442003</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674051442003</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +381,9 @@
     <MESSAGE value="2 screenshots added" />
     <MESSAGE value="readme fix" />
     <MESSAGE value="media added" />
-    <option name="LAST_COMMIT_MESSAGE" value="media added" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="refactoring 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

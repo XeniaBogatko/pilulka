@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class PilulkaPages {
+public class PilulkaMainPage {
 
     private final SelenideElement emailInput = $("#email");
     private final SelenideElement passInput = $("#password");
@@ -42,7 +42,7 @@ public class PilulkaPages {
             checkAuth = $(".js-validate-error-label"),
             checkFooter = $$(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links").get(2);
 
-    public PilulkaPages openPage() {
+    public PilulkaMainPage openPage() {
         step("Open 'https://www.pilulka.cz/'", () ->
                 open("https://www.pilulka.cz/"));
 
@@ -79,7 +79,7 @@ public class PilulkaPages {
                 animalButton.shouldHave(text("Veterina")));
     }
 
-    public PilulkaPages search(String text) {
+    public PilulkaMainPage search(String text) {
         step("Enter text for input", () ->
                 searchInput.setValue(text)).pressEnter();
         return this;
@@ -116,7 +116,6 @@ public class PilulkaPages {
                 chosenItem.click());
         if ($(byText("Kdy bude zboží u vás?")).isDisplayed()) {
             // i cant catch this dialog locally, it exists only on the remote server
-            //todo close the dialog
         }
         step("Add item in the basket", () ->
                 addItem.click());
