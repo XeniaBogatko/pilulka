@@ -40,7 +40,8 @@ public class PilulkaMainPage {
             authUser = $("[title=\"Přihlásit se\"]"),
             authButton = $$("[data-method=\"Regular\"]").last(),
             checkAuth = $(".js-validate-error-label"),
-            modalWindowClose = $$("[aria-label=\"Zavřít modální okno\"]").get(1),
+            modalWindow = $(byText("Kdy bude zboží u vás?")),
+            modalWindowCloseButton = $$("[aria-label=\"Zavřít modální okno\"]").get(1),
             checkFooter = $$(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links").get(2);
 
     public PilulkaMainPage openPage() {
@@ -115,11 +116,13 @@ public class PilulkaMainPage {
                 subMenu.click());
         step("Choose item in the list", () ->
                 chosenItem.click());
-        if ($(byText("Kdy bude zboží u vás?")).isDisplayed()) {
-            //cant catch this dialog locally, it exists only on the remote server
-            step("Close modal window", () ->
-                modalWindowClose.click());
-        }
+        step("Check if modal window is opened", () -> {
+            if (modalWindow.isDisplayed()) {
+                //cant catch this dialog locally, it exists only on the remote server
+                step("Close modal window", () ->
+                        modalWindowCloseButton.click());
+            }
+        });
         step("Add item in the basket", () ->
                 addItem.click());
         step("Check basket", () ->
