@@ -28,7 +28,7 @@ public class PilulkaMainPage {
             animalButton = $("[data-root-item=\"item-14050\"]"),
             searchInput = $("#js-search-form-q"),
             searchResult = $("#product-list"),
-            subMenu = $(byText("Fitness potraviny")),
+            subMenu = $$(".main-nav__category-title.js_level-2").findBy(text("Proteinové potraviny")),
             chosenItem = $("#product-list div"),
             addItem = $("[data-event=\"ProductDetailMaster\"] #js-add-to-cart-first"),
             basket = $(".header-user__counter"),
