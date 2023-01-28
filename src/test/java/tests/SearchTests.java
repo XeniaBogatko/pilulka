@@ -3,16 +3,15 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junitpioneer.jupiter.RetryingTest;
-import pages.PilulkaMainPage;
-
+import pages.MainPage;
+@Epic("Search")
+@Feature("Search a item by typing")
 public class SearchTests extends TestBase {
-    PilulkaMainPage pilulkaPage = new PilulkaMainPage();
+    MainPage pilulkaPage = new MainPage();
 
     @RetryingTest(5)
-    @Epic("Search")
     @Owner("Xenia Bogatko")
     @Severity(SeverityLevel.CRITICAL)
-    @Feature("Search a item by typing")
     @DisplayName("Search for Nurofen")
     void itemSearchTest() {
         pilulkaPage

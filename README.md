@@ -1,6 +1,6 @@
 ## Test automation project for https://pilulka.cz
 
-##	Content
+##	Table of contents
 
 - [Technologies and tools](#technologist-technologies-and-tools)
 - [Implemented checks](#bookmark-tabs-implemented-checks)
@@ -60,7 +60,7 @@ gradle clean test
 
 ## <img width="4%" title="Jenkins" src="media/logo/Jenkins_logo.svg"> Running tests in [Jenkins](https://jenkins.autotests.cloud/job/pilulka/)
 
-Build needs to set options and customization options <code><strong>*Collect*</strong></code>.
+First you need to click on the <code><strong>*Collect with parameters*</strong></code> button and set options. By clicking on the <code><strong>*Collect*</strong></code> button a build will be started.
 
 <p align="center">
   <img src="media/jenkins.png" alt="Jenkins" width="800">

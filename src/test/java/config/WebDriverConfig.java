@@ -3,22 +3,18 @@ package config;
 import org.aeonbits.owner.Config;
 
 public interface WebDriverConfig extends Config {
-    @Key("baseUrl")
+
     @DefaultValue("https://www.pilulka.cz/")
-    String getBaseUrl();
+    String baseUrl();
 
-    @Key("browser")
     @DefaultValue("chrome")
-    String getBrowser();
+    String browser();
 
-    @Key("browserVersion")
     @DefaultValue("100")
-    String getBrowserVersion();
+    String browserVersion();
 
-    @Key("browserSize")
     @DefaultValue("1920x1080")
-    String getBrowserSize();
+    String browserSize();
 
-    @Key("remote")
-    String getRemote();
+    String remote();
 }

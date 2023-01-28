@@ -15,24 +15,18 @@ public class WebDriverProvider {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("enableVNC", true);
-
-        capabilities.setCapability("enableVideo", true);
-
         Configuration.browserCapabilities = capabilities;
+        Configuration.baseUrl = WebDriverProvider.config.baseUrl();
+        Configuration.browser = WebDriverProvider.config.browser();
+        Configuration.browserVersion = WebDriverProvider.config.browserVersion();
+        Configuration.browserSize = WebDriverProvider.config.browserSize();
 
-        Configuration.baseUrl = WebDriverProvider.config.getBaseUrl();
-
-        Configuration.browser = WebDriverProvider.config.getBrowser();
-
-        Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
-
-        Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
-
-        String remoteUrl = WebDriverProvider.config.getRemote();
+        String remoteUrl = WebDriverProvider.config.remote();
 
         if (remoteUrl != null) {
             Configuration.remote = remoteUrl;
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
         }
     }
 }

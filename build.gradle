@@ -45,7 +45,6 @@ dependencies {
             'org.slf4j:slf4j-simple:2.0.5',
             'org.junit-pioneer:junit-pioneer:1.9.1',
             "io.appium:java-client:$appiumVersion")
-
 }
 
 tasks.withType(JavaCompile) {

@@ -8,7 +8,7 @@ public class Auth {
     public static AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
 
     static {
-        assertThat(config.login());
-        assertThat(config.pass());
+        assertThat(config.username());
+        assertThat(config.password());
     }
 }

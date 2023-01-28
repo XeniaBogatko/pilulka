@@ -4,57 +4,61 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class PilulkaMainPage {
+public class MainPage {
 
     private final SelenideElement emailInput = $("#email");
     private final SelenideElement passInput = $("#password");
     private final String addedItem = "Nutrend Excelent Protein Bar 9 x 85 g";
     private SelenideElement
             logo = $(".logo__header"),
-            medicineButton = $("[data-root-item=\"item-1032\"]"),
-            additivesButton = $("[data-root-item=\"item-1089\"]"),
-            motherButton = $("[data-root-item=\"item-1167\"]"),
-            electroButton = $("[data-root-item=\"item-2421\"]"),
-            cosmeticButton = $("[data-root-item=\"item-1399\"]"),
-            drugstoreButton = $("[data-root-item=\"item-2120\"]"),
-            foodButton = $("[data-root-item=\"item-1513\"]"),
-            sportButton = $("[data-root-item=\"item-1583\"]"),
-            toothButton = $("[data-root-item=\"item-1625\"]"),
-            healthButton = $("[data-root-item=\"item-6899\"]"),
-            eroticaButton = $("[data-root-item=\"item-5472\"]"),
-            animalButton = $("[data-root-item=\"item-14050\"]"),
+            medicineButton = $("[data-root-item=item-1032]"),
+            additivesButton = $("[data-root-item=item-1089]"),
+            motherButton = $("[data-root-item=item-1167]"),
+            electroButton = $("[data-root-item=item-2421]"),
+            cosmeticButton = $("[data-root-item=item-1399]"),
+            drugstoreButton = $("[data-root-item=item-2120]"),
+            foodButton = $("[data-root-item=item-1513]"),
+            sportButton = $("[data-root-item=item-1583]"),
+            toothButton = $("[data-root-item=item-1625]"),
+            healthButton = $("[data-root-item=item-6899]"),
+            eroticaButton = $("[data-root-item=item-5472]"),
+            animalButton = $("[data-root-item=item-14050]"),
             searchInput = $("#js-search-form-q"),
             searchResult = $("#product-list"),
             subMenu = $$(".main-nav__category-title.js_level-2").findBy(text("Proteinové potraviny")),
             chosenItem = $(byText(addedItem)),
-            addItem = $$("#js-add-to-cart-first").get(2),
+            addItem = $("#js-add-to-cart-first",2),
             basket = $(".btn.btn-primary.btn-sm.px-3.d-inline-block.fwb"),
             basketId = $("#js-cart-open"),
-            saleLink = $("#js-mobile-banner-car-cart [href=\"/vyprodej\"]"),
+            saleLink = $("#js-mobile-banner-car-cart [href=/vyprodej]"),
             basketSubMenu = $("#js-mobile-banner-car-cart"),
             mainTitle = $("#main-title"),
             controlItem = $(".ml-2.mr-2.ml-md-0.mr-md-0"),
-            authUser = $("[title=\"Přihlásit se\"]"),
-            authButton = $$("[data-method=\"Regular\"]").last(),
+            authUser = $("[title=Přihlásit se]"),
+            authButton = $$("[data-method=Regular]").last(),
             checkAuth = $(".js-validate-error-label"),
             modalWindow = $(byText("Kdy bude zboží u vás?")),
-            modalWindowCloseButton = $$("[aria-label=\"Zavřít modální okno\"]").get(1),
-            checkFooter = $$(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links").get(2);
+            modalWindowCloseButton = $("[aria-label=Zavřít modální okno]", 1),
+            checkFooter = $(".ml-lg-4.pl-lg-4.pl-1.ml-1.fwn.footer__bottom-cs-links", 2);
 
-    public PilulkaMainPage openPage() {
-        step("Open 'https://www.pilulka.cz/'", () ->
-                open("https://www.pilulka.cz/"));
-
-        if ($(".footer__cookie").isDisplayed()) {
-            $(byText("Odmítnout všechny cookies")).click();
-        }
+    @Step("Open {baseUrl}")
+    public MainPage openPage() {
+        open(baseUrl);
         return this;
     }
 
+    @Step("Close a message about cookies")
+    public MainPage closeCookiesMessage() {
+        $(byText("Odmítnout všechny cookies")).click();
+        return this;
+    }
+
+    @Step("Check menu items")
     public void checkMenuItems() {
         step("Check menu item name 'Léky'", () ->
                 medicineButton.shouldHave(text("Léky")));
@@ -82,17 +86,18 @@ public class PilulkaMainPage {
                 animalButton.shouldHave(text("Veterina")));
     }
 
-    public PilulkaMainPage search(String text) {
-        step("Enter text for input", () ->
-                searchInput.setValue(text)).pressEnter();
+    @Step("Search for {text}")
+    public MainPage search(String text) {
+        searchInput.setValue(text).pressEnter();
         return this;
     }
 
+    @Step("Check {headerText} in search results")
     public void checkInSearchResults(String headerText) {
-        step("Checking in stock", () ->
-                searchResult.shouldHave(text(headerText)));
+        searchResult.shouldHave(text(headerText));
     }
 
+    @Step("Check that the basket is empty")
     public void checkEmptyBasket() {
         step("Hover basket", () ->
                 basketId.hover());
@@ -101,7 +106,8 @@ public class PilulkaMainPage {
         });
     }
 
-    public void openSales() {
+    @Step("Open Sales from the basket")
+    public void checkSalesInBasket() {
         step("Hover basket", () ->
                 basketId.hover());
         step("Open Sales", () -> {
@@ -110,6 +116,7 @@ public class PilulkaMainPage {
         });
     }
 
+    @Step("Add an item into the basket")
     public void addItemInBasket() {
         step("Hover 'Sport' button in the menu", () ->
                 sportButton.hover());
@@ -118,6 +125,8 @@ public class PilulkaMainPage {
         step("Choose item in the list", () ->
                 chosenItem.click());
 
+        //sometimes the modal window appears and breaks the test, looks like it works not for all clients
+        //that's why if construction is here, 'sleep' helps to catch the window
         sleep(5000);
         step("Check if modal window is opened", () -> {
             if (modalWindow.isDisplayed()) {
@@ -152,8 +161,8 @@ public class PilulkaMainPage {
                 checkAuth.shouldHave(text("Vyplňte prosím váš e-mail")));
     }
 
-    public void setCheckFooter(String testFooter) {
-        step("Checking footer selection", () ->
-                checkFooter.shouldHave(text(testFooter)));
+    @Step("Check that footer has correct name {testFooter}")
+    public void checkFooter(String testFooter) {
+        checkFooter.shouldHave(text(testFooter));
     }
 }

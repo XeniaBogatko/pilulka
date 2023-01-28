@@ -3,15 +3,10 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({
-        //"file:/tmp/auth.properties",
-        "classpath:auth.properties"
-})
+@Config.Sources("classpath:auth.properties")
+
 public interface AuthConfig extends Config {
 
-    @Key("username")
-    String login();
-
-    @Key("password")
-    String pass();
+    String username();
+    String password();
 }

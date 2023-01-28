@@ -1,16 +1,13 @@
 package tests;
 
 import config.Auth;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junitpioneer.jupiter.RetryingTest;
-import pages.PilulkaMainPage;
-
+import pages.MainPage;
+@Epic("Login")
 public class AuthorizationTests extends TestBase {
-    PilulkaMainPage pilulkaPage = new PilulkaMainPage();
+    MainPage pilulkaPage = new MainPage();
 
     @RetryingTest(5)
     @Owner("Xenia Bogatko")
@@ -20,6 +17,6 @@ public class AuthorizationTests extends TestBase {
     void authorizationTestNegative() {
         pilulkaPage
                 .openPage()
-                .loginWithError(Auth.config.login(), Auth.config.pass());
+                .loginWithError(Auth.config.username(), Auth.config.password());
     }
 }

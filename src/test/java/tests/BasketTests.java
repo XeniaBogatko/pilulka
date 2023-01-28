@@ -3,14 +3,12 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junitpioneer.jupiter.RetryingTest;
-import pages.PilulkaMainPage;
-
+import pages.MainPage;
+@Epic("Basket")
 public class BasketTests extends TestBase {
-    PilulkaMainPage pilulkaPage = new PilulkaMainPage();
+    MainPage pilulkaPage = new MainPage();
 
     @Test
-    @Epic("Basket")
     @Story("Empty basket")
     @Owner("Xenia Bogatko")
     @Severity(SeverityLevel.CRITICAL)
@@ -22,7 +20,6 @@ public class BasketTests extends TestBase {
     }
 
     @Test
-    @Epic("Basket")
     @Story("Sales in the basket")
     @Owner("Xenia Bogatko")
     @Severity(SeverityLevel.MINOR)
@@ -30,12 +27,11 @@ public class BasketTests extends TestBase {
     void openSaleFromBasketTest() {
         pilulkaPage
                 .openPage()
-                .openSales();
+                .checkSalesInBasket();
     }
 
    // @RetryingTest(5)
     @Test
-    @Epic("Basket")
     @Story("Adding item to the basket")
     @Owner("Xenia Bogatko")
     @Severity(SeverityLevel.BLOCKER)
